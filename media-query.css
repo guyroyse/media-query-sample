@@ -1,0 +1,76 @@
+body {
+  font-family: Georgia, serif;
+}
+
+img {
+  min-height: 120px;
+  max-height: 120px;
+  min-width: 120px;
+  max-width: 120px;
+}
+
+/* iPhone */
+@media screen and (max-width : 320px) {
+
+  img {
+    min-height: 24px;
+    max-height: 24px;
+    min-width: 24px;
+    max-width: 24px;
+  }
+
+  .related-link {
+    display: inline;
+  }
+
+  #related-links {
+    border-top: 1px dotted;
+    padding-top: 20px;
+  }
+
+}
+
+/* iPad */
+@media screen and (min-width : 320px) and (max-width : 1000px) {
+
+  #content {
+    width: 95%;
+    height: 60%;
+    max-height: 60%;
+    overflow: scroll;
+    margin: 2%;
+  }
+
+  #related-links {
+    height: 20%;
+    text-align: center;
+  }
+
+  .picture {
+    float: left;
+    margin: 20px;
+  }
+
+}
+
+/* Desktop */
+@media screen and (min-width : 1000px) {
+
+  #content {
+    width: 70%;
+    height: 100%;
+    float: left;
+    margin: 2%;
+  }
+
+  #related-links {
+    width: 25%;
+    float: right;
+    text-align: center;
+  }
+
+  .picture {
+    padding-bottom: 20px;
+  }
+
+}
